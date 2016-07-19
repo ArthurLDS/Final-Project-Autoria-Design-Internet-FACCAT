@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#6aceff">
+  <title>Game Stop</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+<header class="jumbotron cabecalho">
+	<div class="container">
+      <div class="col-md-9">
+	   	   <a href="index.html"><img class="img-logo" src="imgs/logo_topo.png" alt=""></a>
+		  	 <p>POWER TO THE PLAYERS</p>
+ 	 	     <a class="btn btn-primary btn-lg" href="cadastro.html" role="button">Cadastre-se já</a>
+ 	    </div>
+     <div class="col-md-3 login hidden-xs">
+       <legend>Login</legend>
+       <form action="login.php" method="POST">
+         <input name="email" class="form-control" type="text" placeholder="Email">
+         <input name="senha" class="form-control" type="password" placeholder="Senha">
+         <input type="submit" class="form-control btn btn-success" value="Entrar">
+         <a href="cadastro.html" style="font-weight: 500; box-shadow: 2px 2px 15 #OOO;">Não tenho uma conta</a>
+       </form>
+     </div>
+  </div>  
+</header>
+<nav class="navbar navbar-default menutopo">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notícias<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Consoles</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Pré-vendas</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Dicas</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Lançamentos<span class="sr-only">(current)</span></a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        
+      </ul>
+      <form class="navbar-form navbar-left" role="search" action="http://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+        <div class="form-group">
+          <input type="hidden" name="si" value="42766126">
+          <input type="hidden" name="pid" value="r">
+          <input type="hidden" name="n" value="0">
+          <input type="hidden" name="_charset_" value="">
+          <input type="hidden" name="bcd" value="&#247;">
+          <input type="text" name="query" class="form-control" placeholder="Faça aqui sua pesquisa">
+        </div>
+        <button type="submit" class="btn btn-default">Pesquisar</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="contato.html">Contato</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quem somos<spam class="caret"></spam></a>
+          <ul class="dropdown-menu">
+            <li><a href="quemsomos.html#aboutour">Nossa História</a></li>
+            <li><a href="quemsomos.html#founders">Os fundadores</a></li>
+            <li><a href="quemsomos.html#developer">Desenvolvedor do site</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<section class="container">
+	
+		<section class="col-md-9 sectionmain">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <a href="http://www.e3expo.com/takeover"><img src="http://www.nerdweek.com.br/wp-content/uploads/2016/06/tfx-E3-conferencia-da-microsoft.jpg" alt="e3"></a>
+      <div class="carousel-caption">
+        <h3>Veja os maiores destaques da E3</h3>
+      </div>
+    </div>
+    <div class="item">
+      <a href="https://www.easports.com/br/fifa"><img src="http://img.artevirtualfc.com.br/2016/06/frostbite-livingthedream-lg.jpg" alt="FIFA17"></a>
+      <div class="carousel-caption">
+        <h3>FIFA 17 supera PES 2017 com modo Jornada</h3>
+      </div>
+    </div>
+    <div class="item">
+      <a href="https://godofwar.playstation.com/index.php"><img src="https://godofwar.playstation.com/wp-content/uploads/2016/06/GOW-Twitter-Screen1.jpg" alt="GofOfWar"></a>
+      <div class="carousel-caption">
+        <h3>Saiba tudo sobre o novo God of War</h3>     
+      </div>
+    </div>
+    <div class="item">
+      <a href="https://www.battlefield.com/pt-br"><img src="https://i.ytimg.com/vi/c7nRTF2SowQ/maxresdefault.jpg" alt="bf1"></a>
+      <div class="carousel-caption">
+        <h3>Battlefield 1 será ambientado durante a Primeira Guerra Mundial</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+      <br>
+      <div>
+        <article class="col-md-12 coluna-art">
+          <div class="panel panel-primary">
+            <header class="panel-heading header-articles"><h2 class="panel-title">TOP VÍDEOS</h2></header>
+            <div class="panel-body">
+              <div style="padding-left: 10px; padding-right: 0px;" class="col-md-4">
+                <iframe class="img-responsive" width="250" height="180" src="https://www.youtube.com/embed/c7nRTF2SowQ" frameborder="0" allowfullscreen></iframe>
+                <h4 class="title-games">Battlefield 1:  trailer official</h4>
+              </div>
+              <div style="padding-left: 5px; padding-right: 0px;" class="col-md-4">
+                <iframe class="img-responsive" width="250" height="180" src="https://www.youtube.com/embed/CJ_GCPaKywg" frameborder="0" allowfullscreen></iframe>
+                <h4 class="title-games">God of War - E3 2016 - Gameplay</h4>
+              
+              </div>
+              <div style="padding-left: 2px; padding-right: 0px;" class="col-md-4">
+                <iframe class="img-responsive" width="250" height="180" src="https://www.youtube.com/embed/1rPxiXXxftE" frameborder="0" allowfullscreen></iframe>
+                <h4 class="title-games">The Legend of Zelda: Breath of the Wild - Official Trailer</h4>
+                
+              </div>
+            </div>
+
+          </div>
+        </article>    
+
+        <article class="coluna-art col-md-12">
+          <div style="padding-left: 0;" class="col-md-5">
+            <a href="#"><img src="http://s2.glbimg.com/MrMbegJGixRZaFcfLWchcWjaDIw=/360x171/top/smart/http://s.glbimg.com/po/tt2/f/original/2016/06/13/captura_de_tela_2016-06-13_as_01.36.56_pm.png" alt="" class="img-responsive"><a>
+          </div>
+          <div  class="col-md-7">
+            <a href=""><p class="art-type">Xbox One</p></a>
+            <a href="#"><h3>Novo Xbox One S é o destaque da Microsoft na E3</h3></a>
+            <p class="art-p">Microsoft apresentou o novo console com tecnologia 4K durante a feira de jogos, que será lançado ainda esse ano
+            </p>
+          </div>
+        </article>
+        <hr>
+        <article class="coluna-art col-md-12">
+          <div style="padding-left: 0;" class="col-md-5">
+            <a href="#"><img src="http://s2.glbimg.com/InCS5REkYzZNCfh1BpXzMjMZ8zg=/360x171/top/smart/http://s.glbimg.com/po/tt2/f/original/2016/06/12/battlefield_1.jpg" alt="" class="img-responsive"><a>
+          </div>
+          <div  class="col-md-7">
+            <a href=""><p class="art-type">JOGOS</p></a>
+            <a href="#"><h3>Battlefield 1 melhora o multiplayer da franquia da EA na E3 2016</h3></a>
+            <p class="art-p">Testamos o novo jogo de tiro na Primeira Guerra Mundial da EA</p>
+          </div>
+        </article>
+        <hr>
+        <article class="coluna-art col-md-12">
+          <div style="padding-left: 0;" class="col-md-5">
+            <a href="#"><img src="http://s2.glbimg.com/l01mp3V0qRPkM9Xc2DN4RSuQUU4=/360x171/top/smart/http://s.glbimg.com/po/tt2/f/original/2016/06/14/promocao-melhores-e3-2016-sony-playstation-4.jpg" alt="" class="img-responsive"><a>
+          </div>
+          <div  class="col-md-7">
+            <a href=""><p class="art-type">JOGOS</p></a>
+            <a href="#"><h3>Sony faz promoção dos 'melhores da E3' com descontos de até 84% no PS4</h3></a>
+            <p class="art-p">Promoção para games que já foram destaque na feira de jogos, entre eles Assassin’s Creed Syndicate, Metal Gear Solid 5: The Phantom Pain e Fallout 4<a></p>
+          </div>
+        </article> 
+      </div>
+		</section>
+    </a>
+    <aside class="col-md-3 asidebarra">
+     <div class="panel panel-primary"> 
+      <header class="panel-heading">
+         <h3 class="panel-title">Lançamentos</h3>
+      </header>
+      <section class="panel-body">  
+      <img class="img-responsive" src="https://media-www-battlefieldwebcore.spark.ea.com/content/battlefield-portal/pt_BR/buy/battlefield-1/_jcr_content/par/buy/buyProducts/product/retailers/retailer/boxArt.img.jpg" alt="bf1">
+      <h3 class="title-games">Battlefield 1</h3>
+      <a href="https://www.battlefield.com/pt-br/buy/battlefield-1"><button class="btn btn-success btn-l">Pre-order now</button></a>
+        <p></br>
+          Battlefield 1 foi anunciado nesta sexta-feira (6) para Xbox One, PS4 e PCs. O game chegará no dia 21 de outubro de 2016 e será ambientado na Primeira Guerra Mundial. A "volta no tempo" marca um recomeço para a franquia da Electronic Arts, uma vez que seus últimos títulos se passaram nos dias atuais. 
+        </p>
+      </section>
+      <section class="panel-body">  
+      <img style="width: 250px; height: 320px;"class="img-responsive" src="http://im.ziffdavisinternational.com/ign_br/screenshot/default/ck7oleauuaaktp3_6v2t.jpg" alt="Zelda BW">
+      <h3 class="title-games">The Legend of Zelda</h3>
+      <a href="http://e3.nintendo.com/games/the-legend-of-zelda-breath-of-the-wild-wii-u/#preorder-content-copy"><button class="btn btn-success btn-l">Pre-order now</button></a>
+        <p></br>
+         O aguardado The Legend of Zelda: Breath of the Wild estava presente como única atração de destaque no estande da Nintendo na E3 2016. Com lançamento programado para Wii U e o novo Nintendo NX, o título abraça o gênero de mundo aberto da maneira que os fãs tanto desejavam, sem perder a essência e nostalgia dos títulos mais antigos. Testamos duas demos do jogo durante a feira em Los Angeles.
+        </p>
+      </section>
+     </div>
+    </aside>
+</section>
+<footer class="bs-docs-footer">
+  <p class="pfooter">
+    <h3>Este site faz parte de um projeto Universitário</h3><br>
+    <div><a href="https://faccat.br" target="_blanck"><img class="img-responsive faccat-img" src="https://www2.faccat.br/portal/sites/default/files/ckeditorimages/FACCAT.png" alt="faccat-img"></a></div><br>
+    Desenvolvido por: Arthur Lima de Souza<br>
+    Disciplina:<a target="_blanck" href="https://fit.faccat.br/~fpereira/pagina/autoria/"> Autoria e Design para Internet</a><br>
+    Profª: Flávia Pereira de Carvalho <br>
+    Data de publicação: 23/06/2016 
+    <br>
+    <br>FACCAT - Faculdades Integradas de Taquara - Todos os direitos reservados © 2016
+  </p>
+</footer>
+</body>
+</html>

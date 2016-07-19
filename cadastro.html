@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6aceff">
+  <title>Cadastro</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<header class="jumbotron cabecalho">
+  <div class="container">
+      <div class="col-md-9">
+         <a href="index.html"><img class="img-logo" src="imgs/logo_topo.png" alt=""></a>
+         <p>POWER TO THE PLAYERS</p>
+         <a class="btn btn-primary btn-lg" href="cadastro.html" role="button">Cadastre-se já</a>
+      </div>
+     <div class="col-md-3 login hidden-xs">
+       <legend>Login</legend>
+       <form action="login.php" method="POST">
+         <input name="email" class="form-control" type="text" placeholder="Email">
+         <input name="senha" class="form-control" type="password" placeholder="Senha">
+         <input type="submit" class="form-control btn btn-success" value="Entrar">
+         <a href="cadastro.html" style="font-weight: 500; box-shadow: 2px 2px 15 #OOO;">Não tenho uma conta</a>
+       </form>
+     </div>
+  </div>  
+</header>
+<nav class="navbar navbar-default menutopo">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notícias<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Consoles</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Pré-vendas</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Dicas</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Lançamentos<span class="sr-only">(current)</span></a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Faça aqui sua pesquisa">
+        </div>
+        <button type="submit" class="btn btn-default">Pesquisar</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="contato.html">Contato</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quem somos<spam class="caret"></spam></a>
+          <ul class="dropdown-menu">
+            <li><a href="quemsomos.html#aboutour">Nossa História</a></li>
+            <li><a href="quemsomos.html#founders">Os fundadores</a></li>
+            <li><a href="quemsomos.html#developer">Desenvolvedor do site</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<section class="container">
+    <section class="col-md-9 sectionmain">
+      <div class="panel panel-primary panel-spo">
+            <header class="panel-heading header-articles-spo"><h2 class="panel-title">Cadastro</h2></header>
+            <div class="panel-body">
+              <div class="col-md-6">
+                <h4>Preença os campos</h4>
+                <p>Você receberá um e-mail de confirmação em breve</p>
+                <form action="cadastro-email.php" method="post">
+                  <input name="nome"  required="" class="form-control form-cadastro" type="text" placeholder="Nome Completo*"><br>
+                  <input name="email"  required="" class="form-control form-cadastro" type="email" placeholder="Email*"><br>
+                  <input name="senha"  required="" class="form-control form-cadastro" type="password" placeholder="Senha*"><br>
+                  <input name="senhaconf" required="" class="form-control form-cadastro" type="password" placeholder="Digite novamente sua senha*"><br>
+                  <button type="submit" class="btn btn-success">Cadastrar</button> <button type="reset" class="btn btn-danger">Limpar campos</button>
+                </form>
+              </div>
+              <div class="col-md-6 hidden-xs">
+                <img class="img-responsive" src="http://img07.deviantart.net/5c1b/i/2015/115/e/3/gamestop_logo_by_zleunamme-d4mcpca.png" alt="">
+              </div>
+            </div>
+      </div>
+    </section>
+     <aside class="col-md-3 asidebarra">
+     <div class="panel panel-primary"> 
+      <header class="panel-heading">
+         <h3 class="panel-title">Lançamentos</h3>
+      </header>
+      <section class="panel-body">  
+      <img class="img-responsive" src="https://media-www-battlefieldwebcore.spark.ea.com/content/battlefield-portal/pt_BR/buy/battlefield-1/_jcr_content/par/buy/buyProducts/product/retailers/retailer/boxArt.img.jpg" alt="bf1">
+      <h3 class="title-games">Battlefield 1</h3>
+      <a href="https://www.battlefield.com/pt-br/buy/battlefield-1"><button class="btn btn-success btn-l">Pre-order now</button></a>
+        <p></br>
+          Battlefield 1 foi anunciado nesta sexta-feira (6) para Xbox One, PS4 e PCs. O game chegará no dia 21 de outubro de 2016 e será ambientado na Primeira Guerra Mundial. A "volta no tempo" marca um recomeço para a franquia da Electronic Arts, uma vez que seus últimos títulos se passaram nos dias atuais. 
+        </p>
+      </section>
+      <section class="panel-body">  
+      <img style="width: 250px; height: 320px;"class="img-responsive" src="http://im.ziffdavisinternational.com/ign_br/screenshot/default/ck7oleauuaaktp3_6v2t.jpg" alt="Zelda BW">
+      <h3 class="title-games">The Legend of Zelda</h3>
+      <a href="http://e3.nintendo.com/games/the-legend-of-zelda-breath-of-the-wild-wii-u/#preorder-content-copy"><button class="btn btn-success btn-l">Pre-order now</button></a>
+        <p></br>
+         O aguardado The Legend of Zelda: Breath of the Wild estava presente como única atração de destaque no estande da Nintendo na E3 2016. Com lançamento programado para Wii U e o novo Nintendo NX, o título abraça o gênero de mundo aberto da maneira que os fãs tanto desejavam, sem perder a essência e nostalgia dos títulos mais antigos. Testamos duas demos do jogo durante a feira em Los Angeles.
+        </p>
+      </section>
+     </div>
+    </aside>
+</section>
+<footer class="bs-docs-footer">
+  <p class="pfooter">
+    <h3>Este site faz parte de um projeto Universitário</h3><br>
+    <div><a href="https://faccat.br" target="_blanck"><img class="img-responsive faccat-img" src="https://www2.faccat.br/portal/sites/default/files/ckeditorimages/FACCAT.png" alt="faccat-img"></a></div><br>
+    Desenvolvido por: Arthur Lima de Souza<br>
+    Disciplina:<a target="_blanck" href="https://fit.faccat.br/~fpereira/pagina/autoria/"> Autoria e Design para Internet</a><br>
+    Profª: Flávia Pereira de Carvalho <br>
+    Data de publicação: 23/06/2016 
+    <br>
+    <br>FACCAT - Faculdades Integradas de Taquara - Todos os direitos reservados © 2016
+  </p>
+</footer>
+</body>
+</html>

@@ -8,7 +8,7 @@
   <title>Game Stop</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script>onBlur="" 
+  <script>onBlur=""
     function validar(){
       var alfabeto = "abcdefghijklmnopqrstuvwyxABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
       var div = document.getElementById("div-alert");
@@ -19,16 +19,16 @@
       size = emailImp.length;
 
       if (document.contato.nome.value == "") {
-        
+
         document.contato.nome.focus();
-        div.innerHTML = 
+        div.innerHTML =
             "<div class='alert alert-danger alerta' role='alert'>"+
                 "<spam class='glyphicon glyphicon-alert'></spam> O campo de <b>nome</b> não pode estar em branco"
             +"</div>";
       }
       else if (document.contato.email.value == "") {
         document.contato.email.focus();
-        div.innerHTML = 
+        div.innerHTML =
             "<div class='alert alert-danger alerta' role='alert'>"+
                 "<spam class='glyphicon glyphicon-alert'></spam> O campo de <b>email</b> não pode estar em branco"
             +"</div>";
@@ -49,7 +49,7 @@
           }
         }
         if (cont!=1) {
-            div.innerHTML = 
+            div.innerHTML =
             "<div class='alert alert-danger alerta' role='alert'>"+
                 "<spam class='glyphicon glyphicon-alert'></spam> O campo de <b>email</b> não está correto!"
             +"</div>";
@@ -57,20 +57,20 @@
         else{
           if (document.contato.msg.value == "") {
             document.contato.msg.focus();
-            div.innerHTML = 
+            div.innerHTML =
             "<div class='alert alert-danger alerta' role='alert'>"+
                 "<spam class='glyphicon glyphicon-alert'></spam> O campo de <b>mensagem</b> não pode estar em branco"
             +"</div>";
           }
-          else{ 
-            div.innerHTML = 
+          else{
+            div.innerHTML =
             "<div class='alert alert-info' role='alert'>"+
                 "<spam class='glyphicon glyphicon-repeat'></spam>"+" Aguarde um instante..."
             +"</div>";
           }
         }
       }
-      
+
     }
     function limpa(){
       var div = document.getElementById("div-alert");
@@ -97,7 +97,7 @@
          <a href="cadastro.html" style="font-weight: 500; box-shadow: 2px 2px 15 #OOO;">Não tenho uma conta</a>
        </form>
      </div>
-  </div>  
+  </div>
 </header>
 <nav class="navbar navbar-default menutopo">
   <div class="container">
@@ -121,15 +121,15 @@
             <li><a href="#">Consoles</a></li>
             <li><a href="#">Promoções</a></li>
             <li><a href="#">Pré-vendas</a></li>
-            
+
             <li><a href="#">Dicas</a></li>
-            
+
             <li><a href="#">Reviews</a></li>
           </ul>
         </li>
         <li><a href="#">Lançamentos<span class="sr-only">(current)</span></a></li>
         <li><a href="cadastro.html">Cadastro</a></li>
-        
+
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -163,9 +163,9 @@
                   <input onClick="limpa()" name="email" class="form-control form-cadastro" type="email" placeholder="Email*" required=""><br>
                   <textarea onClick="limpa()" name="msg" class="form-control" cols="60" rows="10" placeholder="Digite aqui sua mensagem*" required=""></textarea><br>
                   <div id="div-alert">
-                    
+
                   </div>
-                  <button type="submit" class="btn btn-success" onClick="validar();">Enviar</button> 
+                  <button type="submit" class="btn btn-success" onClick="validar();">Enviar</button>
                    <button type="reset" class="btn btn-danger">Limpar campos</button>
                 </form>
               </div>
@@ -188,7 +188,7 @@
                     <a href="https://www.linkedin.com/in/arthur-lima-de-souza-344757111" target="blank"><img class="img-responive ico-rd" src="http://image.flaticon.com/icons/svg/145/145807.svg" alt="linkedim"></a>
                     <a href="https://play.google.com/store/apps/dev?id=5008262250105376696" target="blank"><img style="width: 31px; height: 28px;"class="img-responive ico-rd" src="http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Google-Play-Store-alt-icon.png" alt="play-google"></a>
                   </div>
-      
+
                 </p>
               </div>
             </div>
@@ -210,20 +210,20 @@
     </section>
 
     <aside class="col-md-3 asidebarra">
-     <div class="panel panel-primary"> 
+     <div class="panel panel-primary">
       <header class="panel-heading">
          <h3 class="panel-title">Lançamentos</h3>
       </header>
-      <section class="panel-body">  
-      <img class="img-responsive" src="https://media-www-battlefieldwebcore.spark.ea.com/content/battlefield-portal/pt_BR/buy/battlefield-1/_jcr_content/par/buy/buyProducts/product/retailers/retailer/boxArt.img.jpg" alt="bf1">
+      <section class="panel-body">
+      <img class="img-responsive" src="http://vignette2.wikia.nocookie.net/battlefield/images/0/0c/Battlefield_1_Xbox_One_Cover_Art.jpg/revision/latest?cb=20160508015511" alt="bf1">
       <h3 class="title-games">Battlefield 1</h3>
       <a href="https://www.battlefield.com/pt-br/buy/battlefield-1"><button class="btn btn-success btn-l">Pre-order now</button></a>
         <p></br>
-          Battlefield 1 foi anunciado nesta sexta-feira (6) para Xbox One, PS4 e PCs. O game chegará no dia 21 de outubro de 2016 e será ambientado na Primeira Guerra Mundial. A "volta no tempo" marca um recomeço para a franquia da Electronic Arts, uma vez que seus últimos títulos se passaram nos dias atuais. 
+          Battlefield 1 foi anunciado nesta sexta-feira (6) para Xbox One, PS4 e PCs. O game chegará no dia 21 de outubro de 2016 e será ambientado na Primeira Guerra Mundial. A "volta no tempo" marca um recomeço para a franquia da Electronic Arts, uma vez que seus últimos títulos se passaram nos dias atuais.
         </p>
       </section>
-      <hr>
-      <section class="panel-body">  
+			<hr>
+      <section class="panel-body">
       <img style="width: 250px; height: 320px;"class="img-responsive" src="http://im.ziffdavisinternational.com/ign_br/screenshot/default/ck7oleauuaaktp3_6v2t.jpg" alt="Zelda BW">
       <h3 class="title-games">The Legend of Zelda</h3>
       <a href="http://e3.nintendo.com/games/the-legend-of-zelda-breath-of-the-wild-wii-u/#preorder-content-copy"><button class="btn btn-success btn-l">Pre-order now</button></a>
@@ -241,7 +241,7 @@
     Desenvolvido por: Arthur Lima de Souza<br>
     Disciplina:<a target="_blanck" href="https://fit.faccat.br/~fpereira/pagina/autoria/"> Autoria e Design para Internet</a><br>
     Profª: Flávia Pereira de Carvalho <br>
-    Data de publicação: 23/06/2016 
+    Data de publicação: 23/06/2016
     <br>
     <br>FACCAT - Faculdades Integradas de Taquara - Todos os direitos reservados © 2016
   </p>
